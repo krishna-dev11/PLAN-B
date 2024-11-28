@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.background
+{
+    /* background-color: black; */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), 
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-color: black;
+    /* height: 100vh; */
+    width: 100vw;
+}
+
+.bgform
+{
+background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.switch-path-signloginpage
+{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 2rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.bgggg
+{
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Remove background (make it transparent) */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Darker color for the scrollbar */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change color on hover */
+  }
+
+
+  .spline-container {
+    width: 100%; /* Full width of the parent container */
+    /* height: 100% Adjust height to half of the viewport */
+    position: relative;
+    overflow: hidden; /* Prevent scrollbars for clean visuals */
+    /* border: 2px solid #ccc; Optional: for debugging layout */
+  }
+  
+  spline-viewer {
+    width: 100%; /* Spline viewer takes full width */
+    height: 100%; /* Spline viewer takes full height */
+    border: none; /* Remove iframe-like border */
+  }
+/* <html>
+<head>
+    <title>Grid Background with Hover Effect and Border Waves Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .grid-background {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), 
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-color: black;
+            position: relative;
+        }
+        .waves {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            animation: wave 4s infinite ease-in-out;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .grid-background:hover .waves {
+            opacity: 1;
+        }
+        .waves:nth-child(2) {
+            animation-delay: 1s;
+        }
+        .waves:nth-child(3) {
+            animation-delay: 2s;
+        }
+        @keyframes wave {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="grid-background min-h-screen flex items-center justify-center">
+    <div class="waves"></div>
+    <div class="waves"></div>
+    <div class="waves"></div>
+</body>
+</html> */
