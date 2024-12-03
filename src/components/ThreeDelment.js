@@ -3,7 +3,7 @@ import SplineViewer from "./SplineViewer";
 
 function ThreeDelment() {
   return (
-    <div className="App">
+    <div>
       <SplineViewer />
     </div>
   );

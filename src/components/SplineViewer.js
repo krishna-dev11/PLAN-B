@@ -3,7 +3,7 @@ import React from "react";
 
 const SplineViewer = () => {
   return (
-    <div className="spline-container relative">
+    <div className="spline-container ">
       {/* <spline-viewer
         url="https://prod.spline.design/HntfJ2N2K5UxBdYs/scene.splinecode"
       ></spline-viewer> */}

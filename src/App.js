@@ -8,6 +8,10 @@ import Dashboard from "./pages/Dashboard"
 import { useEffect, useState } from 'react'
 import PrivateRoute from "./components/PrivateRoute";
 import Rtoa from "./components/Rtoa";
+import PaymentGateway from "./components/PaymentGateway";
+import PaymentGatewayMethod from "./components/PaymentGatewayMethod";
+import OrderTracking from "./components/OrderTracking";
+import PhonePeUI from "./components/PhonePeUI";
 
 
 function App() {
@@ -30,6 +34,10 @@ function App() {
           </PrivateRoute>
         } />
         <Route path="/rtoa-section" element={<Rtoa/>}/>
+        <Route path="/paymentgatway" element={<PaymentGateway/>}/>
+        <Route path="/paymentgatwaymethod" element={<PaymentGatewayMethod/>}/>
+        <Route path="/ordertracking" element={<OrderTracking/>}/>
+        <Route path="/Qrsection"  element={<PhonePeUI/>}/>
       </Routes>
 
     </div>

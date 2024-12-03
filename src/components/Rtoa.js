@@ -45,17 +45,21 @@ const Rtoa = () => {
         <FaReply fontSize={32} fill='#ffffff'/>
       </div>
 
+      <Link to='/paymentgatway' >
       <div>
         <IoQrCode fontSize={32} fill='#ffffff'/>
       </div>
+      </Link>
 
       <div>
         <FaBell fontSize={32} fill='#ffffff'/>
       </div>
 
+      <Link to="/ordertracking">
       <div>
         <IoLocation fontSize={32} fill='#ffffff'/>
       </div>
+      </Link>
 
       <div>
         <FcOnlineSupport fontSize={32} fill='#ffffff'/>
@@ -69,9 +73,11 @@ const Rtoa = () => {
         <MdSettingsSuggest fontSize={32} fill='#ffffff'/>
       </div>
 
+      <Link to='https://gemini.google.com/app'>
       <div className='h-[2rem] rounded-full w-[2rem] bg-blue-500 '>
         <img src={chatbot}/>
       </div>
+      </Link>
 
       </div>
       <div className='h-[3rem] w-[3rem] rounded-full bg-pink-200 translate-y-[-1rem]'>
