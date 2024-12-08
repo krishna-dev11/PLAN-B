@@ -195,3 +195,27 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     animation: moveDown 60s linear infinite; /* Slower animation */
   }
   
+
+  @keyframes scaleToFullScreen {
+    0% {
+      transform: scale(1); /* Original size */
+      opacity: 1; /* Fully visible */
+    }
+    100% {
+      transform: scale(10); /* Screen ke full size tak scale */
+      opacity: 0; /* Invisible when full screen */
+    }
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Center and original size */
+    width: 50px; /* Initial width */
+    height: 50px; /* Initial height */
+    /* background: url('/path-to-your-logo.png') no-repeat center/contain; Logo image */
+    animation: scaleToFullScreen 2s ease-out forwards; /* 2 seconds scale animation */
+    z-index: 1000; /* Ensures it appears above other content */
+  }
+  

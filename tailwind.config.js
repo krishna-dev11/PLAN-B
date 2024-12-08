@@ -3,6 +3,22 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+
+      keyframes: {
+        moveLeft: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        moveRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        moveLeft: 'moveLeft 60s linear infinite', // Very slow animation
+        moveRight: 'moveRight 60s linear infinite', // Very slow animation
+      },
+
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import chatbot from "../assets/chatbot-removebg-preview.png"
 import { Link } from 'react-router-dom';
 import Moves from '../components/Moves';
-
+import Leftright from '../components/Leftright';
 
 const Dashboard = () => {
   return (
@@ -15,9 +15,13 @@ const Dashboard = () => {
       </div>
 
       <div className="bg-white h-[4rem] w-[70%] fixed bgform z-50 top-[37rem] flex justify-evenly items-center text-white">
-        <div className='bgform h-[90%] w-[19%] justify-center flex items-center'>Patient</div>
+        <Link to="/rtoa-section">
+        <div className='bgform h-[3.5rem] w-[10rem] justify-center flex items-center'>Patient</div>
+        </Link>
         <div className='bgform h-[90%] w-[19%] justify-center flex items-center'>Donor</div>
-        <div className='bgform h-[90%] w-[19%] justify-center flex items-center'>Doctor</div>
+        <Link to="/MedicalGarden">
+        <div className='bgform h-[3.5rem] w-[10rem] justify-center flex items-center'>Doctor</div>
+        </Link>
         <div className='bgform h-[90%] w-[19%] justify-center flex items-center'>Submit</div>
         <div className='bgfor rounded-lg h-[90%] w-[18.5%] justify-center flex items-center bg-[#FFB200]'>
         <FaArrowRight fontSize={32} />
@@ -32,7 +36,8 @@ const Dashboard = () => {
 
       <Moves/>
 
-      <ProductOverview/>
+      <Leftright/>
+
 
     </div>
   )

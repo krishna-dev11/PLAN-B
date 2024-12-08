@@ -1,9 +1,10 @@
 import React from 'react'
+import logo from "../assets/Logo-planb.png"
 
 const Home = ({isLoggedIn}) => {
   return (
-    <div className='flex justify-center items-center w-screen text-white h-[640PX]'>
-      <div className=' font-serif text-[4rem] translate-y-[-4rem]'>Welcome to PLAN-B !</div>
+    <div className='flex justify-center items-center w-screen text-white h-[640PX] logo-container'>
+      <img src={logo} className='logo'/>
     </div>
   )
 }
